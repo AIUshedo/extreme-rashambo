@@ -24,26 +24,32 @@ function win(user, computer) {
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   outcome_div.innerHTML = ("WINNER WINNER CHICKEN DINNER");
-  computer_p.innerHTML = ("Computer chooses " + getComputerChoice());
+  computer_p.innerHTML = ("COMPUTER CHOOSES " + getComputerChoice());
   console.log("WIN");
+  if (userScore === 5) {
+    alert("YOURE THE BIG WINNER");
+  }
 }
 function lose() {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   outcome_div.innerHTML = ("BIG LOSER");
-  computer_p.innerHTML = ("Computer chooses " + getComputerChoice());
+  computer_p.innerHTML = ("COMPUTER CHOOSES " + getComputerChoice());
   console.log("LOSE");
+  if (computerScore === 5) {
+    alert("YOURE THE BIG WINNER");
+  }
 }
 function draw(user) {
 outcome_div.innerHTML = ("Really? So many options and you draw?");
-  computer_p.innerHTML = ("Computer chooses " + getComputerChoice());
+  computer_p.innerHTML = ("COMPUTER CHOOSES " + getComputerChoice());
   console.log("DRAW");
 }
 function game(userChoice) {
   var computerChoice = getComputerChoice();
   switch (userChoice + computerChoice) {
-    case "ROCKSCISSORS":
+    case "rs":
       win();
       break;
     case "rg":
@@ -95,5 +101,6 @@ function main() {
       game("g");
     });
 }
+
 main();
 });
