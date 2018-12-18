@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-     
     <meta charset="utf-8">
-    <title></title>
+    <title>Extreme Rashambo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+<header>
+  <h1>Extreme Rashambo</h1>
+</header>
+
+<div class="score-board">
+  <div id="user-label" class="badge">User</div>
+  <div id="computer-label" class="badge">Computer</div>
+  <span id="user-score">0</span>:<span id="computer-score">0</span>
+</div>
+
+
+<div class="result">
+   <p class="computerChoiceprint">Computer chooses</p>
+  <p id = outcomeText>Paper covers rock. You win!</p>
+</div>
+
+<div class="choices">
+  <div class="choice">
+    <img src="rock.png" class="ROCK" id="r" alt="">
+  </div>
+
+  <div class="choice">
+    <img  src="paper.png" class="PAPER" id="p" alt="Paper">
+  </div>
+
+  <div class="choice">
+    <img src="scissors.png" class="SCISSORS" id="s" alt="">
+  </div>
+
+  <div class="choice">
+    <img src="bomb.png" id="b" class="BOMB" alt="">
+  </div>
+
+  <div class="choice">
+    <img src="gun.png" id="g" class="GUN" alt="">
+  </div>
+</div>
+
+<p id="action-message">Make your move</p>
+
+<a href="index2.html">
+  <button type="button" id="htp" name="How-to-play">How To play</button>
+</a>
+</div>
+<script src="main.js" charset="utf-8"></script>
 
   </body>
 </html>
