@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Extreme Roshambo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<header>
+  <h1>Extreme Roshambo</h1>
+</header>
+
+<div class="score-board">
+  <div id="user-label" class="badge">User</div>
+  <div id="computer-label" class="badge">Computer</div>
+  <span id="user-score">0</span>:<span id="computer-score">0</span>
+</div>
+
+
+<div class="result">
+   <p class="computerChoiceprint"></p>
+   <p id = howItBeatIt></p>
+   <p id = outcomeText></p>
+</div>
+
+<div class="choices">
+      <div class="choice">
+        <img src="rock.png" id="ROCK" class="r"  alt="">
+      </div>
+
+      <div class="choice">
+        <img  src="paper.png" id="PAPER" class="p"  alt="Paper">
+      </div>
+
+      <div class="choice">
+        <img src="scissors.png" id="SCISSORS" class="s"  alt="">
+      </div>
+
+      <div class="choice">
+        <img src="bomb.png" id="BOMB" class="b" alt="">
+      </div>
+
+      <div class="choice">
+        <img src="gun.png" id="GUN" class="g" alt="">
+      </div>
+</div>
+
+<p id="action-message">MAKE YOUR MOVE</p>
+<div class="">
+  <a href="homepage&instructions.html">
+    <button type="button" id="hp" name="homepage">Homepage</button>
+</a>
+</div>
+<script src="main.js" charset="utf-8"></script>
+
+  </body>
+</html>
