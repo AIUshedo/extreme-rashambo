@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>Extreme Roshambo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <embed type="music" src="rude-buster.mp3" hidden="true" autostart="true">;
 <header>
   <h1>Extreme Roshambo</h1>
 </header>
@@ -16,8 +18,14 @@
   <div id="user-label" class="badge">User</div>
   <div id="computer-label" class="badge">Computer</div>
   <span id="user-score">0</span>:<span id="computer-score">0</span>
+
 </div>
 
+
+
+<div class="choiceimage">
+  <img id=userImage src="" alt="">
+</div>
 
 <div class="result">
    <p class="computerChoiceprint"></p>
@@ -52,8 +60,11 @@
   <a href="homepage&instructions.html">
     <button type="button" id="hp" name="homepage">Homepage</button>
 </a>
+<a href="uservscpu.html">
+  <button type="button" id="restartg" name="userVsCpuPage">Restart Game</button>
+</a>
 </div>
-<script src="main.js" charset="utf-8"></script>
+
 
   </body>
 </html>

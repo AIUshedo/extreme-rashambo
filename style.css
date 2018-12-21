@@ -6,6 +6,8 @@
 body{
 background-color:blue;
 
+
+
 }
 header{
   background: yellow;
@@ -15,8 +17,34 @@ h1 {
   color: red;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 100px;
+}
+
+#firstTo5{
+  margin right: 20px;
+  font-size: 50px;
+}
+
+#gameRestart{
+font-family: 'Permanent Marker', cursive;
+color: white;
+background-color: red;
+border-color: yellow;
+border-width: thick;
+border-radius: 100%;
+padding: 50px;
+margin-left: 680px;
+margin-top: 30px;
+text-indent: inherit;
+transition: 0.5s ease;-;/0';
+}
+#gameRestart:hover{
+cursor: pointer;
+background:E6E6FA;
+}
+h4{
+  margin-bottom: 100px;
 }
 h3{
   text-align: center;
@@ -26,18 +54,27 @@ h3{
 }
 
 #single{
-  margin-top: 25px;
-  margin-left: 700px;
-  font-family: 'Permanent Marker', cursive;
+font-family: 'Permanent Marker', cursive;
+color: white;
+background-color: red;
+border-color: yellow;
+border-width: thick;
+border-radius: 100%;
+padding: 50px;
+margin-left: 680px;
+margin-top: 30px;
+text-indent: inherit;
+transition: 0.5s ease;-;/0';
 }
-#multiplayer{
-  margin-top: 25px;
-  margin-left: 700px;
-  font-family: 'Permanent Marker', cursive;
+#single:hover{
+cursor: pointer;
+background:E6E6FA;
 }
+
 ul{
+  margin-right: 400px;
   font-family: 'Permanent Marker', cursive;
-  color: red;
+  color: white;
   font-size: 25px;
 }
 h4{
@@ -102,8 +139,9 @@ p{
   font-family: 'Permanent Marker', cursive;
 }
 .choices{
-  margin: 50px 0;
+  margin: 1px 0;
   text-align: center;
+  
 }
 .choice{
 
@@ -132,25 +170,41 @@ transition: all 0.5s ease;-;/0';
   width: 150px;
   height: 150px;
 }
+#PAPER:hover{
+  transform: scale(1.2);
+}
 #ROCK{
   width: 150px;
   height: 150px;
+}
+#ROCK:hover{
+  transform: scale(1.2);
 }
 #SCISSORS{
   width: 150px;
   height: 150px;
 }
+#SCISSORS:hover{
+  transform: scale(1.2);
+}
 #BOMB{
   width: 150px;
   height: 150px;
+}
+#BOMB:hover{
+  transform: scale(1.2);
 }
 #GUN{
   width: 150px;
   height: 150px;
 }
+#GUN:hover{
+  transform: scale(1.2);
+}
 #instructions{
   color: white;
 }
+
 
 #htp{
 font-family: 'Permanent Marker', cursive;
@@ -211,6 +265,23 @@ text-indent: inherit;
 transition: 0.5s ease;-;/0';
 }
 #hp:hover{
+cursor: pointer;
+background:E6E6FA;
+}
+#restartg{
+font-family: 'Permanent Marker', cursive;
+color: white;
+background-color: red;
+border-color: yellow;
+border-width: thick;
+border-radius: 100%;
+padding: 50px;
+margin-left: 680px;
+margin-top: 30px;
+text-indent: inherit;
+transition: 0.5s ease;-;/0';
+}
+#restartg:hover{
 cursor: pointer;
 background:E6E6FA;
 }
