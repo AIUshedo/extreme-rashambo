@@ -68,7 +68,7 @@ function draw(computerChoice) {
 }
 
 function game(userChoice) {
-  backgroundmusic.play();
+
   var computerChoice = getComputerChoice();
   switch (userChoice + computerChoice) {
 
@@ -261,6 +261,7 @@ function game(userChoice) {
 }
 game();
 function main() {
+    backgroundmusic.play();
     rock_div.addEventListener("click", function () {
       game("ROCK");
     });
