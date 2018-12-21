@@ -44,7 +44,6 @@ function win(computerChoice) {
     yes.play();
     computer_p.innerHTML = ("");
     outcome_div.innerHTML =("YOU REACHED 5 FIRST, WELL DONE!")
-     document.getElementByClassName("choices").disabled = true;
   }
 }
 
@@ -58,7 +57,6 @@ function lose(computerChoice) {
     unlucky.play();
   computer_p.innerHTML = ("");
   outcome_div.innerHTML =("THE COMPUTER REACHED 5 FIRST, UNLUCKY!");
-   document.getElementByClassName("choices").disabled = true;
   }
 }
 
@@ -232,7 +230,7 @@ function game(userChoice) {
     howItBeatIt_p.innerHTML="SCISSORS CUT THE BOMBS WIRES...OR IS THE PLIERS?"
     lose(computerChoice);
       break;
-
+//lose conditions end here
     case "SCISSORSSCISSORS":
     howItBeatIt_p.innerHTML =""
     draw(computerChoice);
@@ -261,7 +259,6 @@ function game(userChoice) {
 }
 game();
 function main() {
-    backgroundmusic.play();
     rock_div.addEventListener("click", function () {
       game("ROCK");
     });
