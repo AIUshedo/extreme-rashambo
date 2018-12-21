@@ -185,7 +185,7 @@ function game(userChoice) {
       break;
     case "PAPERSCISSORS":
     if (computerScore != 4) {
-      paper.play();
+      scissors.play();
     }
     howItBeatIt_p.innerHTML="SCISSORS LAUGH AT YOUR THIN PAPER AHAHAHAHA"
     lose(computerChoice);
@@ -193,7 +193,7 @@ function game(userChoice) {
 
     case "PAPERBOMB":
     if (computerScore != 4) {
-      paper.play();
+      bomb.play();
     }
     howItBeatIt_p.innerHTML="BOMBS MAKE PAPER BURN BABY BURN!"
     lose(computerChoice);
@@ -230,7 +230,9 @@ function game(userChoice) {
     howItBeatIt_p.innerHTML="SCISSORS CUT THE BOMBS WIRES...OR IS THE PLIERS?"
     lose(computerChoice);
       break;
+
 //lose conditions end here
+
     case "SCISSORSSCISSORS":
     howItBeatIt_p.innerHTML =""
     draw(computerChoice);
